@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everywhere You Go 🌦️</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="cityDisplay"></h1>
+
+          <h2 id="temperatureDisplay"></h2>
+
+          <h3></h3>
+
+          <div class="title">
+            <div class="card">
+              <div class="card-body">Everywhere You Go...</div>
+            </div>
+          </div>
+
+          <div class="info" <div class="card">
+            <ul class="temperature">
+              <li>Todays high: 26°C</li>
+              <li>Todays low: 10°C</li>
+            </ul>
+            <div class="card-body-temp">Mainly sunny all day 😎</div>
+          </div>
+        </div>
+
+        <form id="search-form" class="row g-3">
+          <div class="col-auto">
+            <label for="inputCity" class="visually-hidden"
+              >Enter City Here</label
+            >
+            <input
+              type="city"
+              class="form-control"
+              id="inputCity"
+              placeholder="Enter City Here"
+            />
+          </div>
+          <div class="col-auto">
+            <button
+              id="searchButton"
+              type="submit"
+              class="btn btn-primary mb-3"
+            >
+              Search
+            </button>
+          </div>
+          <div class="col-auto">
+            <button id="currentLocation" type="button" class="btn btn-success">
+              Current Location
+            </button>
+          </div>
+        </form>
+
+        <br />
+
+        <section class="date">
+          <div class="row">
+            <div class="col">Sun 16th Oct</div>
+            <div class="col">Mon 17th Oct</div>
+            <div class="col">Tue 18th Oct</div>
+            <div class="col">Wed 19th Oct</div>
+            <div class="col">Thur 20th Oct</div>
+          </div>
+        </section>
+        <section class="emojisForecast">
+          <div class="row">
+            <div class="col">☀️</div>
+            <div class="col">⛅</div>
+            <div class="col">☁️</div>
+            <div class="col">☀️</div>
+            <div class="col">☀️</div>
+          </div>
+        </section>
+        <section class="temperature">
+          <div class="row">
+            <div class="col">10°C/24°C</div>
+            <div class="col">10°C/20°C</div>
+            <div class="col">9°C/17°C</div>
+            <div class="col">9°C/19°C</div>
+            <div class="col">12°C/21°C</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
